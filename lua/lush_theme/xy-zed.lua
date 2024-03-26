@@ -166,13 +166,13 @@ local theme = lush(function(injected_functions)
     FloatBorder    { fg = greyed_out }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
-    -- Pmenu          { }, -- Popup menu: Normal item.
-    -- PmenuSel       { }, -- Popup menu: Selected item.
+    Pmenu          { }, -- Popup menu: Normal item.
+    PmenuSel       { CursorLine }, -- Popup menu: Selected item.
     -- PmenuKind      { }, -- Popup menu: Normal item "kind"
     -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
     -- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
     -- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-    -- PmenuSbar      { }, -- Popup menu: Scrollbar.
+    PmenuSbar      { CursorLine }, -- Popup menu: Scrollbar.
     -- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
     -- Question       { }, -- |hit-enter| prompt and yes/no questions
     -- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
