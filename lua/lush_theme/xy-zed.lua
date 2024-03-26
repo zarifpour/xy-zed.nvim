@@ -172,8 +172,8 @@ local theme = lush(function(injected_functions)
     -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
     -- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
     -- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-    PmenuSbar      { CursorLine }, -- Popup menu: Scrollbar.
-    -- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
+    PmenuSbar      { }, -- Popup menu: Scrollbar.
+    PmenuThumb     { bg = neon_green }, -- Popup menu: Thumb of the scrollbar.
     -- Question       { }, -- |hit-enter| prompt and yes/no questions
     -- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search         { fg = white, bg = hsluv("#958334") }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
